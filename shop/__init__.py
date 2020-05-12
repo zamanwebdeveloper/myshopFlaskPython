@@ -5,4 +5,5 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///myshop.db'
 db = SQLAlchemy(app)
 
-from shop import routes
+from shop.admin import routes
+
